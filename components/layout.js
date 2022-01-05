@@ -32,7 +32,9 @@ export default function Layout({ children, home }) {
                     <ul className={isOpen === false ?
                         styles.navmenu : styles.navmenu + ' ' + styles.active}>
                         <li className={styles.navitem}>
-                            <a className={styles.navlink}>Home</a>
+                            <Link href="/">
+                                <a className={styles.navlink}>Home</a>
+                            </Link>
                         </li>
                         <li className={styles.navitem}>
 
@@ -40,9 +42,9 @@ export default function Layout({ children, home }) {
 
                         </li>
                         <li className={styles.navitem}>
-
-                            <a className={styles.navlink}>Contact</a>
-
+                            <Link href="/posts/contact">
+                                <a className={styles.navlink}>Contact</a>
+                            </Link>
                         </li>
                     </ul>
                     <button className={isOpen === false ?

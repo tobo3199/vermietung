@@ -1,0 +1,20 @@
+.title {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.title2 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.liste {
+    font-size: 2rem;
+}
+
+.mail {
+    font-size: 1rem;
+    color: blue;
+}

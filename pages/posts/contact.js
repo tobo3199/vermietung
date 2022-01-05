@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import Karten from '../../components/cards'
+import Kontaktseite from '../../components/kontaktseite'
 
-export default function FirstPost() {
+
+export default function Contact() {
     return (
         <Layout>
             <Head>
-                <title>Rent</title>
+                <title>Contact</title>
             </Head>
-            <Karten></Karten>
+            <Kontaktseite></Kontaktseite>
+
 
 
         </Layout>
