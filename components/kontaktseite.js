@@ -23,10 +23,22 @@ function Kontaktseite() {
                         <li>Tobias Sauter</li>
                         <li>Heinrichstrasse 1</li>
                         <li>8400 Winterthur</li>
-                        <li>Email: <a className={styles.mail} href="mailto:webmaster@example.com">Tobias Sauter</a> </li>
+                        <li>Email: <a className={styles.mail} href="mailto:tobias.sauter@lernende.bbw.ch">Tobias Sauter</a> </li>
                     </ul>
                 </Col>
-
+            </Row>
+            <Row>
+                <Col>
+                    <h2 className={styles.title2}>Organisation:</h2>
+                    <ul className={styles.liste}>
+                        <li>BBW</li>
+                        <li>Pionierstrasse 28</li>
+                        <li>8400 Winterthur</li>
+                        <li>Abteilung Informatik</li>
+                        <li>Tel: 052 267 83 00</li>
+                        <li>Email: <a className={styles.mail} href="mailto:informatik@bbw.ch">informatik@bbw.ch</a> </li>
+                    </ul>
+                </Col>
             </Row>
 
         </Container>
