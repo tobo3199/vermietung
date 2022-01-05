@@ -17,6 +17,20 @@
     
 }
 
+.icon {
+  color: white;
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
+.title {
+  position: relative;
+  top: 13rem;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Luxurious Roman', cursive;
+}
+
 /* CSS Button*/
 
 .position {

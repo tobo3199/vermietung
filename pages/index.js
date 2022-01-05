@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Navbar from '../components/navbar'
 import Startseite from '../components/startseite'
 import Karten from '../components/cards'
+import Startseite2 from '../components/startseite2'
 
 
 export default function Home() {
@@ -13,7 +14,8 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <Startseite></Startseite>
-      <Karten></Karten>
+
+
     </Layout>
   )
 }
