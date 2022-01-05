@@ -14,6 +14,9 @@ function Kontaktseite() {
             <Row>
                 <Col>
                     <h1 className={styles.title}>Contact</h1>
+                    <p className={styles.text}>We are a company that wants to rent homes for our customers. Homes with style and comfort.
+                        If you have any problem don't wait to contact us.
+                    </p>
                 </Col>
             </Row>
             <Row>
