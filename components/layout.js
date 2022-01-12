@@ -58,7 +58,15 @@ export default function Layout({ children, home }) {
                 </nav>
             </header>
 
-            <main>{children}</main>
+            <main className={styles.main}>{children}</main>
+            {/*
+            <footer className={styles.footer}>
+                <li className={styles.liFooter}>
+                    <ul>footer item 1</ul>
+                    <ul>footer item 2</ul>
+                </li>
+            </footer>
+            */}
         </>
     );
 }

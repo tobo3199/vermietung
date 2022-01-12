@@ -3,6 +3,9 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import styles from './cards.module.css';
+import Link from 'next/link'
+
 
 const images = [
     {
@@ -88,35 +91,37 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function Cards() {
     return (
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
-            {images.map((image) => (
-                <ImageButton
-                    focusRipple
-                    key={image.title}
-                    style={{
-                        width: image.width,
-                    }}
-                >
-                    <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-                    <ImageBackdrop className="MuiImageBackdrop-root" />
-                    <Image>
-                        <Typography
-                            component="span"
-                            variant="subtitle1"
-                            color="inherit"
-                            sx={{
-                                position: 'relative',
-                                p: 4,
-                                pt: 2,
-                                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                            }}
-                        >
-                            {image.title}
-                            <ImageMarked className="MuiImageMarked-root" />
-                        </Typography>
-                    </Image>
-                </ImageButton>
-            ))}
-        </Box>
+        <Link href="/posts/house1">
+            <Box className={styles.box} sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 200, width: '80%' }}>
+                {images.map((image) => (
+                    <ImageButton
+                        focusRipple
+                        key={image.title}
+                        style={{
+                            width: image.width,
+                        }}
+                    >
+                        <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+                        <ImageBackdrop className="MuiImageBackdrop-root" />
+                        <Image>
+                            <Typography
+                                component="span"
+                                variant="subtitle1"
+                                color="inherit"
+                                sx={{
+                                    position: 'relative',
+                                    p: 4,
+                                    pt: 2,
+                                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                                }}
+                            >
+                                {image.title}
+                                <ImageMarked className="MuiImageMarked-root" />
+                            </Typography>
+                        </Image>
+                    </ImageButton>
+                ))}
+            </Box>
+        </Link>
     );
 }
