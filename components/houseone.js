@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './houseone.module.css';
 import Link from 'next/link'
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Card, Button } from 'react-bootstrap';
 
 
 
@@ -52,9 +52,12 @@ function Houseone() {
                     </Carousel>
                 </Col>
             </Row>
-            <Row>
+            <Row className={styles.row2}>
                 <Col>
-                    <h1>hallo</h1>
+                    <p>Hallo</p>
+                </Col>
+                <Col>
+
                 </Col>
             </Row>
 
