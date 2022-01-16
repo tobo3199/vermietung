@@ -80,7 +80,7 @@ function Houseone() {
                     </li>
                 </Col>
                 <Col>
-                    <Card sx={{ minWidth: 275, boxShadow: 3 }}>
+                    <Card sx={{ minWidth: 275 }}>
                         <CardContent>
                             <Typography sx={{ fontSize: 24 }} color="text.secondary" gutterBottom>
                                 House Renting

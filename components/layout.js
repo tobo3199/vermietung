@@ -46,6 +46,16 @@ export default function Layout({ children, home }) {
                                 <a className={styles.navlink}>Contact</a>
                             </Link>
                         </li>
+                        <li className={styles.navitem}>
+                            <Link href="/posts/signin">
+                                <a className={styles.navlink}>Login</a>
+                            </Link>
+                        </li>
+                        <li className={styles.navitem}>
+                            <Link href="/posts/signup">
+                                <a className={styles.navlink}>Sign up</a>
+                            </Link>
+                        </li>
                     </ul>
                     <button className={isOpen === false ?
                         styles.hamburger : styles.hamburger + ' ' + styles.active}
